@@ -1,5 +1,3 @@
-
-
 // targeted document query variables
 const weatherForm = document.querySelector('Form')
 const search = document.querySelector('input')
