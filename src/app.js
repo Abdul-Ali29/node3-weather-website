@@ -5,6 +5,8 @@ const request = require('postman-request')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+
+
 const app = express()
 
 const port = process.env.PORT || 3000
@@ -24,12 +26,15 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 
 
+
+
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather',
         name: 'Abdul Ali'
     })
 })
+
 
 
 app.get('/about', (req, res) => {
@@ -107,3 +112,6 @@ app.get('*', (req, res)=> {
 app.listen(port, () => {
     console.log('Server is up on port ' + port)
 })
+
+
+
