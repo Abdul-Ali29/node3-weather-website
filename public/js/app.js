@@ -5,6 +5,8 @@ const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
 
 
+
+
 // weather application search box
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
@@ -28,8 +30,4 @@ weatherForm.addEventListener('submit', (e) => {
 
     
 })
-
-
-
- 
 
